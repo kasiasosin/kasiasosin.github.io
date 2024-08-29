@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Cairo');
 body {
   background-color:#00002b;
 }
@@ -11,7 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 50vh;
   letter-spacing: 1px;
   line-height:2
 }

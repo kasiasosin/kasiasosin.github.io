@@ -51,7 +51,7 @@ div nav ul {
 
 
 body {
-    background-color: #441174;
+    background-color: #8b799b;
 }
 
 #container {
@@ -99,7 +99,7 @@ body {
     border: 1px solid;
     margin: 5px;
     padding: 30px; 
-    background-color: black;
+    background-color: #441172;
     border-radius: 15px; /* Add this line to make the edges curved */
 
 }
@@ -123,7 +123,7 @@ body {
     border: 1px solid;
     margin: 5px;
     padding: 10px; 
-    background-color: black;
+    background-color: #441172;
     border-radius: 15px; /* Add this line to make the edges curved */
 
 }
@@ -139,4 +139,12 @@ body {
 .img {
 
     float: right;
+}
+
+@media (max-width: 500px) {
+    .img {
+        grid-column: 1/2;
+        grid-row: 6;
+
+    }
 }
