@@ -1,1 +1,2 @@
-ErrorDocument 404 /errorPage.html
+RewriteEngine on
+ErrorDocument 404   http://www.kasiasosin.github.io/errorPage.html
