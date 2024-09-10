@@ -1,23 +1,45 @@
+@font-face {
+    font-family: "playfairDark";
+    src: url("./fonts/playfairDark.ttf");
+  }
+
+@font-face {
+font-family: "playfairRegular";
+src: url("./fonts/playfairRegular.ttf");
+}
+
+
 h1 {
-    color: darkblue;
-    font-size: 3em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(76, 8, 115);
+    font-size: 5em;
+    font-family: "playfairDark";
 }
 
 
 h2 {
     color: lightblue;
     font-size: 1em;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    font-family: "playfairRegular";
 }
 
 p {
     color: lightblue;
+    font-family: "playfairRegular";
+
+}
+
+.footer-text {
+    color: rgb(250, 250, 250);
+    font-size:small;
 }
 
 .customlist {
     display: flex;
     justify-content: space-around;
+    font-family: "playfairRegular";
+
+    
+
 
 }
 
@@ -59,15 +81,19 @@ body {
     grid-template-columns: 20% 80%;
     gap: 1px;
     grid-auto-rows: minmax(100px, auto);
+    background-image: url(./sunset.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
 }
 
 .topbar {
     grid-column: 1/8;
     grid-row: 1;
-    border: 1px solid black;
     margin: 5px;
     padding: 15px; 
-    background-color:black;
     border-radius: 15px; /* Add this line to make the edges curved */
 
 }
@@ -77,10 +103,10 @@ body {
     display: flexbox;
     grid-template-columns: auto 1fr;
     align-items:flex-end; /* Align items vertically in the center */
-    background-color: #441172;
+    background-color:rgb(99, 4, 99);
+    opacity: 0.95;
     grid-column: 2/8;
     grid-row: 3/6;
-    border: 1px solid;
     margin: 20px;
     padding: 15px; 
     border-radius: 15px; /* Add this line to make the edges curved */
@@ -96,10 +122,10 @@ body {
 .subheader {
     grid-column: 1/8;
     grid-row: 2;
-    border: 1px solid;
     margin: 5px;
     padding: 30px; 
-    background-color: #441172;
+    background-image: linear-gradient(rgb(239, 90, 155), rgb(130, 35, 130));
+    opacity: 0.9;
     border-radius: 15px; /* Add this line to make the edges curved */
 
 }
@@ -120,10 +146,8 @@ body {
 .footerbit {
     grid-column: 1/8;
     grid-row: 6;
-    border: 1px solid;
     margin: 5px;
     padding: 10px; 
-    background-color: #441172;
     border-radius: 15px; /* Add this line to make the edges curved */
 
 }
@@ -136,9 +160,28 @@ body {
     }
 }
 
-.img {
+.content-container {
+    overflow: hidden; /* Contain floated elements */
+}
 
+.text-content {
+    float: left;
+    width: 60%; /* Adjust based on your needs */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.image-container {
     float: right;
+    width: 30%; /* Adjust based on your needs */
+    max-width: 300px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%; /* Image fills the container */
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
 @media (max-width: 500px) {
@@ -148,3 +191,5 @@ body {
 
     }
 }
+
+
